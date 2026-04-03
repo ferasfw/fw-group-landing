@@ -33,16 +33,13 @@ export default function Home() {
         <h1 className="text-4xl font-semibold leading-tight tracking-tight text-neutral-900 md:text-5xl">
           Strategic representation for
           <br />
-          esports and gaming creators.
+          social leaders and digital creators.
         </h1>
 
         <p className="mx-auto mt-8 max-w-3xl text-lg font-medium leading-relaxed text-neutral-800">
-          We represent a focused roster of gaming talent and structure brand
-          partnerships from negotiation to execution.
-        </p>
-
-        <p className="mt-4 text-base font-medium text-neutral-800 md:text-lg">
-          Built for long term category alignment.
+          We manage a focused roster of elite talent with a combined reach of
+          400,000+ followers. From social commentary to niche gaming, we bridge
+          the gap between high-impact voices and strategic brand partnerships.
         </p>
 
         <div className="mt-8">
@@ -72,28 +69,31 @@ export default function Home() {
         <div className="mt-12 grid gap-12 md:grid-cols-3">
           <div>
             <h3 className="text-lg font-semibold text-neutral-900">
-              Alignment
+              Social Impact Integrations
             </h3>
             <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              Category fit over volume.
+              We align brands with the most influential voices in social
+              leadership to build trust and community authority.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900">
-              Structure
+              Niche Category Expertise
             </h3>
             <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              Clear deliverables, usage rights, timelines.
+              We dominate specific digital verticals, ensuring your brand is
+              seen by the most engaged audiences in the world.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900">
-              Execution
+              End-to-End Execution
             </h3>
             <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              End to end campaign oversight.
+              We handle everything from high-level negotiation to final
+              deliverable oversight.
             </p>
           </div>
         </div>
@@ -104,16 +104,11 @@ export default function Home() {
           Who We Partner With
         </p>
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg font-medium leading-relaxed text-neutral-800">
-          Gaming hardware brands, publishers, platforms, and performance driven
-          consumer companies seeking structured creator partnerships.
-        </p>
-
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Chip>Hardware</Chip>
-          <Chip>Publishers</Chip>
-          <Chip>Platforms</Chip>
-          <Chip>Performance brands</Chip>
+          <Chip>National Consumer Brands</Chip>
+          <Chip>Telecommunications</Chip>
+          <Chip>Financial Institutions</Chip>
+          <Chip>Gaming Technology</Chip>
         </div>
       </section>
 
@@ -122,18 +117,47 @@ export default function Home() {
           Current Representation
         </p>
 
-        <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center gap-12 md:flex-row md:items-center">
-          <div className="w-full shrink-0 md:w-[420px]">
-            <Image
-              src="/images/ephey.jpg"
-              alt="Ephey"
-              width={420}
-              height={420}
-              className="h-auto w-full max-w-[420px] rounded-xl object-cover"
-            />
+        <div className="mx-auto mt-12 grid max-w-4xl gap-12 md:grid-cols-2">
+          {/* Category A: Social Leadership */}
+          <div className="flex flex-col text-center md:text-left">
+            <div className="w-full shrink-0">
+              <Image
+                src="/images/social-leader.jpg"
+                alt="Social Leadership Talent"
+                width={420}
+                height={420}
+                className="h-auto w-full max-w-[420px] rounded-xl object-cover"
+              />
+            </div>
+            <h3 className="mt-6 text-2xl font-semibold text-neutral-900">
+              Social Leadership
+            </h3>
+            <p className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wide">
+              365,000+ Followers
+            </p>
+            <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
+              The leading voice for labor rights and social commentary in Jordan.
+              Mass market reach and high-authority community engagement.
+            </p>
           </div>
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl font-semibold text-neutral-900">Ephey</h3>
+
+          {/* Category B: Digital Culture */}
+          <div className="flex flex-col text-center md:text-left">
+            <div className="w-full shrink-0">
+              <Image
+                src="/images/ephey.jpg"
+                alt="Ephey"
+                width={420}
+                height={420}
+                className="h-auto w-full max-w-[420px] rounded-xl object-cover"
+              />
+            </div>
+            <h3 className="mt-6 text-2xl font-semibold text-neutral-900">
+              Ephey
+            </h3>
+            <p className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wide">
+              Digital Culture
+            </p>
             <p className="mt-1">
               <a
                 href="https://instagram.com/mira.nee"
@@ -145,7 +169,9 @@ export default function Home() {
               </a>
             </p>
             <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
-              Esports broadcast talent and creator with global event presence.
+              Dota 2 Analyst & Creator. Global presence in the esports and
+              variety streaming landscape with deep engagement in gaming hardware
+              and tech.
             </p>
           </div>
         </div>
@@ -153,7 +179,7 @@ export default function Home() {
 
       <section className="border-t border-neutral-200 py-16 text-center">
         <p className="text-[26px] font-semibold uppercase tracking-[0.10em] text-[#111]">
-          Partnership Inquiries
+          Partner with the most influential voices in the region.
         </p>
 
         <p className="mt-6 text-sm font-medium text-[#222]">
@@ -175,7 +201,7 @@ export default function Home() {
           &copy; 2026 FW Group
         </p>
         <p className="text-sm font-medium text-neutral-700">
-          Boutique esports representation
+          Specialized Talent Representation
         </p>
         <p>
           <a
