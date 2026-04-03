@@ -123,21 +123,30 @@ export default function Home() {
             <div className="w-full shrink-0">
               <Image
                 src="/images/social-leader.jpg"
-                alt="Social Leadership Talent"
+                alt="Rula Al-Hroub"
                 width={420}
                 height={420}
                 className="h-auto w-full max-w-[420px] rounded-xl object-cover"
               />
             </div>
             <h3 className="mt-6 text-2xl font-semibold text-neutral-900">
-              Social Leadership
+              Rula Al-Hroub
             </h3>
             <p className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wide">
-              365,000+ Followers
+              Social Leadership
+            </p>
+            <p className="mt-1">
+              <a
+                href="https://www.facebook.com/rulaalhroob/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-600 transition-colors hover:text-blue-700"
+              >
+                View Facebook &rarr;
+              </a>
             </p>
             <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
-              The leading voice for labor rights and social commentary in Jordan.
-              Mass market reach and high-authority community engagement.
+              <strong>365,000+ Followers.</strong> The leading voice for labor rights and social commentary in Jordan. Mass market reach and high-authority community engagement.
             </p>
           </div>
 
@@ -169,9 +178,7 @@ export default function Home() {
               </a>
             </p>
             <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
-              Dota 2 Analyst & Creator. Global presence in the esports and
-              variety streaming landscape with deep engagement in gaming hardware
-              and tech.
+              <strong>100,000+ Followers.</strong> Dota 2 Analyst & Creator. Global presence in the esports and variety streaming landscape with deep engagement in gaming hardware and tech.
             </p>
           </div>
         </div>
