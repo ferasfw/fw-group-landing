@@ -1,226 +1,93 @@
-import Image from "next/image";
-
-const MAILTO_HREF =
-  "mailto:feras@thefwgroup.co?subject=Partnership%20Inquiry";
-
-const LINKEDIN_HREF = "https://www.linkedin.com/in/ferasalhroub/";
-
-function Chip({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-block rounded-full border border-neutral-400 px-6 py-2.5 text-sm font-semibold text-neutral-800 transition-colors hover:bg-neutral-100">
-      {children}
-    </span>
-  );
-}
-
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-6">
-      <header className="flex items-center justify-center py-10 sm:py-14">
-        <a href="/" aria-label="FW Group home">
-          <Image
-            src="/logo.svg"
-            alt="FW Group"
-            width={180}
-            height={52}
-            className="h-[72px] w-auto sm:h-[84px]"
-            priority
-          />
-        </a>
+    <div className="bg-white text-gray-900 antialiased selection:bg-gray-900 selection:text-white font-sans">
+      
+      {/* Header Section */}
+      <header className="py-24 px-6 text-center border-b border-gray-100">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">FW Group</h1>
+        <p className="mt-6 text-xs md:text-sm font-light tracking-[0.3em] uppercase text-gray-500">
+          Specialised Talent Representation
+        </p>
       </header>
 
-      <section className="mx-auto max-w-4xl pb-16 text-center">
-        <h1 className="text-4xl font-semibold leading-tight tracking-tight text-neutral-900 md:text-5xl">
-          Strategic representation for
-          <br />
-          social leaders and digital creators.
-        </h1>
-
-        <p className="mx-auto mt-8 max-w-3xl text-lg font-medium leading-relaxed text-neutral-800">
-          We manage a focused roster of elite talent with a combined reach of
-          400,000+ followers. From social commentary to niche gaming, we bridge
-          the gap between high-impact voices and strategic brand partnerships.
-        </p>
-
-        <div className="mt-8">
-          <a
-            href={MAILTO_HREF}
-            className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-          >
-            Partnership inquiries
-          </a>
-          <p className="mt-3 text-sm font-medium text-neutral-700">
-            Or copy:{" "}
-            <a
-              href={MAILTO_HREF}
-              className="text-neutral-700 transition-colors hover:text-neutral-900 hover:underline"
-            >
-              feras@thefwgroup.co
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section className="border-t border-neutral-200 py-16">
-        <p className="text-center text-[26px] font-semibold uppercase tracking-[0.10em] text-[#111]">
-          Our Approach
-        </p>
-
-        <div className="mt-12 grid gap-12 md:grid-cols-3">
-          <div>
-            <h3 className="text-lg font-semibold text-neutral-900">
-              Social Impact Integrations
-            </h3>
-            <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              We align brands with the most influential voices in social
-              leadership to build trust and community authority.
-            </p>
+      {/* Main Content Container */}
+      <main className="max-w-7xl mx-auto">
+        
+        {/* Talent Section 1: Rula Al-Hroub */}
+        <section className="flex flex-col md:flex-row items-stretch min-h-[75vh] border-b border-gray-100">
+          <div className="w-full md:w-1/2 p-6 md:p-12 flex items-center justify-center">
+            <img 
+              src="/images/rula_photo.jpg" 
+              alt="Rula Al-Hroub" 
+              className="w-full max-w-md aspect-[4/5] object-cover shadow-2xl" 
+            />
           </div>
-
-          <div>
-            <h3 className="text-lg font-semibold text-neutral-900">
-              Niche Category Expertise
+          <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-gray-50/30">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Rula Al-Hroub</h2>
+            <h3 className="text-xl md:text-2xl font-medium text-gray-400 mb-8 uppercase tracking-wide">
+              The National Authority
             </h3>
-            <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              We dominate specific digital verticals, ensuring your brand is
-              seen by the most engaged audiences in the world.
-            </p>
+            <ul className="space-y-5">
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">Secretary General of Jordan Labor Party</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">Former Member of Parliament</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">National Media Icon</span>
+              </li>
+            </ul>
           </div>
+        </section>
 
-          <div>
-            <h3 className="text-lg font-semibold text-neutral-900">
-              End-to-End Execution
+        {/* Talent Section 2: Mira / Ephey */}
+        <section className="flex flex-col md:flex-row-reverse items-stretch min-h-[75vh] border-b border-gray-100">
+          <div className="w-full md:w-1/2 p-6 md:p-12 flex items-center justify-center">
+            <img 
+              src="/images/mira_photo.jpg" 
+              alt="Mira / Ephey" 
+              className="w-full max-w-md aspect-[4/5] object-cover shadow-2xl" 
+            />
+          </div>
+          <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-white">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Mira / Ephey</h2>
+            <h3 className="text-xl md:text-2xl font-medium text-gray-400 mb-8 uppercase tracking-wide">
+              Global Broadcast & Gaming
             </h3>
-            <p className="mt-3 text-base font-medium leading-relaxed text-neutral-700">
-              We handle everything from high-level negotiation to final
-              deliverable oversight.
-            </p>
+            <ul className="space-y-5">
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">Global Broadcast Analyst for Dota 2</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">Renowned Variety Streamer</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-4 text-gray-900 font-bold">—</span>
+                <span className="text-lg leading-relaxed text-gray-800">Specialized Tech & Gaming Influence</span>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="border-t border-neutral-200 py-16 text-center">
-        <p className="text-[26px] font-semibold uppercase tracking-[0.10em] text-[#111]">
-          Who We Partner With
-        </p>
+      </main>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Chip>National Consumer Brands</Chip>
-          <Chip>Telecommunications</Chip>
-          <Chip>Financial Institutions</Chip>
-          <Chip>Gaming Technology</Chip>
-        </div>
-      </section>
-
-      <section className="border-t border-neutral-200 py-16">
-        <p className="text-center text-[26px] font-semibold uppercase tracking-[0.10em] text-[#111]">
-          Current Representation
-        </p>
-
-        <div className="mx-auto mt-12 grid max-w-4xl gap-12 md:grid-cols-2">
-          {/* Category A: Social Leadership */}
-          <div className="flex flex-col text-center md:text-left">
-            <div className="w-full shrink-0">
-              <Image
-                src="/images/social-leader.jpg"
-                alt="Rula Al-Hroub"
-                width={420}
-                height={420}
-                className="h-auto w-full max-w-[420px] rounded-xl object-cover"
-              />
-            </div>
-            <h3 className="mt-6 text-2xl font-semibold text-neutral-900">
-              Rula Al-Hroub
-            </h3>
-            <p className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wide">
-              Social Leadership
-            </p>
-            <p className="mt-1">
-              <a
-                href="https://www.facebook.com/rulaalhroob/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-blue-600 transition-colors hover:text-blue-700"
-              >
-                View Facebook &rarr;
-              </a>
-            </p>
-            <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
-              <strong>365,000+ Followers.</strong> The leading voice for labor rights and social commentary in Jordan. Mass market reach and high-authority community engagement.
-            </p>
-          </div>
-
-          {/* Category B: Digital Culture */}
-          <div className="flex flex-col text-center md:text-left">
-            <div className="w-full shrink-0">
-              <Image
-                src="/images/ephey.jpg"
-                alt="Ephey"
-                width={420}
-                height={420}
-                className="h-auto w-full max-w-[420px] rounded-xl object-cover"
-              />
-            </div>
-            <h3 className="mt-6 text-2xl font-semibold text-neutral-900">
-              Ephey
-            </h3>
-            <p className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wide">
-              Digital Culture
-            </p>
-            <p className="mt-1">
-              <a
-                href="https://instagram.com/mira.nee"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-blue-600 transition-colors hover:text-blue-700"
-              >
-                View Instagram &rarr;
-              </a>
-            </p>
-            <p className="mt-4 text-lg font-medium leading-relaxed text-neutral-700">
-              <strong>100,000+ Followers.</strong> Dota 2 Analyst & Creator. Global presence in the esports and variety streaming landscape with deep engagement in gaming hardware and tech.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-neutral-200 py-16 text-center">
-        <p className="text-[26px] font-semibold uppercase tracking-[0.10em] text-[#111]">
-          Partner with the most influential voices in the region.
-        </p>
-
-        <p className="mt-6 text-sm font-medium text-[#222]">
-          Email is the fastest way to reach us.
-        </p>
-
-        <p className="mt-4">
-          <a
-            href={MAILTO_HREF}
-            className="text-lg font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-4 transition-colors hover:text-blue-600 hover:decoration-blue-300"
-          >
-            feras@thefwgroup.co
-          </a>
-        </p>
-      </section>
-
-      <footer className="border-t border-neutral-200 py-12 text-center space-y-2">
-        <p className="text-sm font-medium text-neutral-700">
-          &copy; 2026 FW Group
-        </p>
-        <p className="text-sm font-medium text-neutral-700">
-          Specialized Talent Representation
-        </p>
-        <p>
-          <a
-            href={LINKEDIN_HREF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-neutral-700 transition-colors hover:underline hover:text-neutral-900 cursor-pointer"
-          >
-            LinkedIn &rarr;
-          </a>
-        </p>
+      {/* Footer Section */}
+      <footer className="py-16 px-6 text-center text-xs tracking-widest text-gray-400 font-medium uppercase">
+        <a href="mailto:feras@thefwgroup.co" className="hover:text-gray-900 transition-colors duration-300">
+          feras@thefwgroup.co
+        </a>
+        <span className="mx-4 text-gray-300">|</span>
+        <a href="https://thefwgroup.co" className="hover:text-gray-900 transition-colors duration-300">
+          thefwgroup.co
+        </a>
       </footer>
+      
     </div>
   );
 }
