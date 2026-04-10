@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050505] text-white flex flex-col justify-between selection:bg-white selection:text-black font-sans">
+    <div className="min-h-screen bg-[#000000] text-white flex flex-col justify-between selection:bg-white selection:text-black font-sans antialiased [text-rendering:optimizeLegibility]">
       
       {/* Header Section */}
       <header className="px-6 w-full max-w-6xl mx-auto flex flex-col items-center text-center">
         {/* Scaled Logo Asset - 25% Larger with 60px bottom margin */}
-        <div className="mt-[40px] mb-[60px] mx-auto flex justify-center opacity-90">
+        <div className="mt-[40px] mb-[60px] mx-auto flex justify-center opacity-100">
           <Image 
             src="/logo.svg" 
             alt="FW Group Logo" 
@@ -29,31 +29,31 @@ export default function Home() {
       <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 py-[80px]">
         
         {/* Pillar 1 */}
-        <section className="flex flex-col border-t border-zinc-800 pt-8">
+        <section className="flex flex-col border-t border-[#333333] pt-8">
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             High-Ticket Sales
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
             We close high-value deals in the real estate and corporate sectors. We identify and acquire the investors and multinational tenants that traditional sales teams miss.
           </p>
         </section>
 
         {/* Pillar 2 */}
-        <section className="flex flex-col border-t border-zinc-800 pt-8">
+        <section className="flex flex-col border-t border-[#333333] pt-8">
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             Strategic Advisory
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
             We manage the public image and private interests of high-profile figures. We provide the strategic infrastructure so leaders can focus on their mission.
           </p>
         </section>
 
         {/* Pillar 3 */}
-        <section className="flex flex-col border-t border-zinc-800 pt-8">
+        <section className="flex flex-col border-t border-[#333333] pt-8">
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             Global Talent Management
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
             We represent elite creators and professionals across Western and Middle Eastern markets. We bridge the gap between global talent and premium brand partnerships.
           </p>
         </section>
@@ -63,16 +63,16 @@ export default function Home() {
       {/* Boutique Divider & Footer Section */}
       <div className="w-full flex flex-col items-center text-center">
         {/* Centered Short Divider */}
-        <div className="w-[80px] h-[1px] bg-[#444444] mx-auto mt-[60px] mb-[40px]"></div>
+        <div className="w-[80px] h-[1px] bg-[#333333] mx-auto mt-[60px] mb-[40px]"></div>
         
         <footer className="pb-[80px] px-6 flex flex-col items-center justify-center font-sans">
           <a 
             href="mailto:feras@thefwgroup.co" 
-            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] hover:text-zinc-300 transition-colors duration-300"
+            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] hover:text-[#E5E5E5] transition-colors duration-300"
           >
             feras@thefwgroup.co
           </a>
-          <span className="text-[#A1A1A1] italic font-serif tracking-[0.1em] text-xs md:text-sm mt-[10px] text-center">
+          <span className="text-[#CCCCCC] italic font-serif tracking-[0.1em] text-xs md:text-sm mt-[10px] text-center">
             By Appointment Only
           </span>
         </footer>
