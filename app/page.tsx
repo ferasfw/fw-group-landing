@@ -14,6 +14,7 @@ export default function Home() {
             height={70} 
             priority
             className="object-contain"
+            style={{ filter: 'invert(1) brightness(2)' }}
           />
         </div>
         <h1 className="text-lg md:text-2xl font-serif font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-zinc-300 max-w-2xl leading-relaxed">
