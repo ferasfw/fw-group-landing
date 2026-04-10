@@ -33,7 +33,7 @@ export default function Home() {
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             High-Ticket Sales
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#E0E0E0] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
             We close high-value deals in the real estate and corporate sectors. We identify and acquire the investors and multinational tenants that traditional sales teams miss.
           </p>
         </section>
@@ -43,7 +43,7 @@ export default function Home() {
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             Strategic Advisory
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#E0E0E0] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
             We manage the public image and private interests of high-profile figures. We provide the strategic infrastructure so leaders can focus on their mission.
           </p>
         </section>
@@ -53,7 +53,7 @@ export default function Home() {
           <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
             Global Talent Management
           </h2>
-          <p className="text-sm md:text-base leading-[1.6] text-[#E0E0E0] font-sans font-light">
+          <p className="text-sm md:text-base leading-[1.6] text-[#D1D1D1] font-sans font-light">
             We represent elite creators and professionals across Western and Middle Eastern markets. We bridge the gap between global talent and premium brand partnerships.
           </p>
         </section>
@@ -68,11 +68,11 @@ export default function Home() {
         <footer className="pb-[80px] px-6 flex flex-col items-center justify-center font-sans">
           <a 
             href="mailto:feras@thefwgroup.co" 
-            className="text-sm md:text-base tracking-[0.2em] lowercase text-white hover:text-zinc-300 transition-colors duration-300"
+            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] hover:text-zinc-300 transition-colors duration-300"
           >
             feras@thefwgroup.co
           </a>
-          <span className="text-[#888888] italic font-serif tracking-[0.1em] text-xs md:text-sm mt-[10px] text-center">
+          <span className="text-[#A1A1A1] italic font-serif tracking-[0.1em] text-xs md:text-sm mt-[10px] text-center">
             By Appointment Only
           </span>
         </footer>
