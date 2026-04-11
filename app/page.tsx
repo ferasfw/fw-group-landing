@@ -6,7 +6,7 @@ export default function Home() {
       
       {/* Header Section */}
       <header className="px-6 w-full max-w-6xl mx-auto flex flex-col items-center text-center">
-        {/* Scaled Logo Asset - 25% Larger with 60px bottom margin */}
+        {/* Scaled Logo Asset */}
         <div className="mt-[40px] mb-[60px] mx-auto flex justify-center opacity-100">
           <Image 
             src="/logo.svg" 
@@ -19,14 +19,15 @@ export default function Home() {
           />
         </div>
         
-        {/* Main Heading - Luxury Tracking (0.25em) */}
-        <h1 className="text-lg md:text-3xl font-serif font-normal tracking-[0.25em] uppercase text-[#FFFFFF] max-w-4xl leading-relaxed">
-          Business Development & Talent Management
+        {/* Main Heading - Forced Two-Line Architecture */}
+        <h1 className="text-lg md:text-3xl font-serif font-normal tracking-[0.25em] text-[#FFFFFF] max-w-4xl leading-relaxed md:leading-loose">
+          <span className="block">BUSINESS DEVELOPMENT</span>
+          <span className="block">& TALENT MANAGEMENT</span>
         </h1>
       </header>
 
-      {/* Main Advisory Pillars Container - Reduced bottom padding to tighten gap */}
-      <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 pt-[80px] pb-[40px]">
+      {/* Main Advisory Pillars Container - Padding compressed by 30% */}
+      <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 pt-[60px] pb-[20px]">
         
         {/* Pillar 1 */}
         <section className="flex flex-col border-t border-[#333333] pt-8">
@@ -61,16 +62,16 @@ export default function Home() {
       </main>
 
       {/* Structured Memorandum Footer Section */}
-      <div className="w-full flex flex-col items-center text-center pb-[80px]">
-        {/* Subtle Horizontal Separator */}
-        <div className="w-[80px] h-[1px] bg-[#333333] mx-auto"></div>
+      <div className="w-full flex flex-col items-center text-center pb-[60px]">
+        {/* Subtle Horizontal Anchor Line - 60px wide, 30px bottom margin */}
+        <div className="w-[60px] h-[1px] bg-[#333333] mx-auto mb-[30px]"></div>
         
         {/* Contact Us Block */}
-        <footer className="mt-[20px] flex flex-col items-center justify-center font-sans">
-          {/* Subtle Hyperlink Email */}
+        <footer className="flex flex-col items-center justify-center font-sans">
+          {/* Raw Hyperlink Email - Pure White, No Underline */}
           <a 
             href="mailto:feras@thefwgroup.co" 
-            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#CCCCCC] hover:text-[#FFFFFF] transition-colors duration-300"
+            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] no-underline hover:text-[#E5E5E5] transition-colors duration-300"
           >
             feras@thefwgroup.co
           </a>
