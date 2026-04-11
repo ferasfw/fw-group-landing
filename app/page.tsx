@@ -21,12 +21,12 @@ export default function Home() {
         
         {/* Main Heading - Luxury Tracking (0.25em) */}
         <h1 className="text-lg md:text-3xl font-serif font-normal tracking-[0.25em] uppercase text-[#FFFFFF] max-w-4xl leading-relaxed">
-          Strategic Business Development & Talent Management
+          Business Development & Talent Management
         </h1>
       </header>
 
-      {/* Main Advisory Pillars Container - High padding for mobile stacking */}
-      <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 py-[80px]">
+      {/* Main Advisory Pillars Container - Reduced bottom padding to tighten gap */}
+      <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 pt-[80px] pb-[40px]">
         
         {/* Pillar 1 */}
         <section className="flex flex-col border-t border-[#333333] pt-8">
@@ -60,19 +60,23 @@ export default function Home() {
 
       </main>
 
-      {/* Boutique Divider & Footer Section */}
-      <div className="w-full flex flex-col items-center text-center">
-        {/* Centered Short Divider */}
-        <div className="w-[80px] h-[1px] bg-[#333333] mx-auto mt-[60px] mb-[40px]"></div>
+      {/* Structured Memorandum Footer Section */}
+      <div className="w-full flex flex-col items-center text-center pb-[80px]">
+        {/* Subtle Horizontal Separator */}
+        <div className="w-[80px] h-[1px] bg-[#333333] mx-auto"></div>
         
-        <footer className="pb-[80px] px-6 flex flex-col items-center justify-center font-sans">
+        {/* Contact Us Block */}
+        <footer className="mt-[20px] flex flex-col items-center justify-center font-sans">
+          {/* Subtle Hyperlink Email */}
           <a 
             href="mailto:feras@thefwgroup.co" 
-            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] hover:text-[#E5E5E5] transition-colors duration-300"
+            className="text-sm md:text-base tracking-[0.2em] lowercase text-[#CCCCCC] hover:text-[#FFFFFF] transition-colors duration-300"
           >
             feras@thefwgroup.co
           </a>
-          <span className="text-[#CCCCCC] italic font-serif tracking-[0.1em] text-xs md:text-sm mt-[10px] text-center">
+          
+          {/* Authoritative Appointment Text */}
+          <span className="mt-[10px] text-[#CCCCCC] font-serif font-semibold tracking-[0.1em] text-xs md:text-sm text-center">
             By Appointment Only
           </span>
         </footer>
