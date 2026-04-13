@@ -26,36 +26,45 @@ export default function Home() {
         </h1>
       </header>
 
-      {/* Main Advisory Pillars Container - Padding compressed by 30% */}
+      {/* Main Advisory Pillars Container */}
       <main className="flex-grow w-full max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 pt-[60px] pb-[20px]">
         
         {/* Pillar 1 */}
         <section className="flex flex-col border-t border-[#333333] pt-8">
-          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
-            High-Ticket Sales
+          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-2">
+            DEAL FINALIZATION
           </h2>
+          <h3 className="text-xs md:text-sm font-serif italic tracking-[0.05em] text-[#CCCCCC] mb-6">
+            We don’t manage pipelines; we finish them.
+          </h3>
           <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
-            We close high-value deals in the real estate and corporate sectors. We identify and acquire the investors and multinational tenants that traditional sales teams miss.
+            We specialize in the "Red Zone"—the final 10% of a negotiation where high-stakes deals typically stall. We provide the external pressure required to turn corporate and real estate handshakes into binding, finalized signatures.
           </p>
         </section>
 
         {/* Pillar 2 */}
         <section className="flex flex-col border-t border-[#333333] pt-8">
-          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
-            Strategic Advisory
+          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-2">
+            REVENUE RECOVERY
           </h2>
+          <h3 className="text-xs md:text-sm font-serif italic tracking-[0.05em] text-[#CCCCCC] mb-6">
+            Turning stalled negotiations into liquid capital.
+          </h3>
           <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
-            We manage the public image and private interests of high-profile figures. We provide the strategic infrastructure so leaders can focus on their mission.
+            We don't audit or advise; we extract. We intervene in non-performing agreements and stagnant corporate disputes to recover revenue that has been lost to complexity, hesitation, or institutional gridlock.
           </p>
         </section>
 
         {/* Pillar 3 */}
         <section className="flex flex-col border-t border-[#333333] pt-8">
-          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-6">
-            Global Talent Management
+          <h2 className="text-sm md:text-base font-sans font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-2">
+            CONTRACT MONETIZATION
           </h2>
+          <h3 className="text-xs md:text-sm font-serif italic tracking-[0.05em] text-[#CCCCCC] mb-6">
+            Converting influence and premium assets into realized growth.
+          </h3>
           <p className="text-sm md:text-base leading-[1.6] text-[#E5E5E5] font-sans font-normal">
-            We represent elite creators and professionals across Western and Middle Eastern markets. We bridge the gap between global talent and premium brand partnerships.
+            We finalize the complex agreements that bridge the gap between global talent and institutional partnerships. We don't manage careers; we structure the final terms that transform high-profile influence into a paid reality.
           </p>
         </section>
 
@@ -63,12 +72,12 @@ export default function Home() {
 
       {/* Structured Memorandum Footer Section */}
       <div className="w-full flex flex-col items-center text-center pb-[60px]">
-        {/* Subtle Horizontal Anchor Line - 60px wide, 30px bottom margin */}
+        {/* Subtle Horizontal Anchor Line */}
         <div className="w-[60px] h-[1px] bg-[#333333] mx-auto mb-[30px]"></div>
         
         {/* Contact Us Block */}
         <footer className="flex flex-col items-center justify-center font-sans">
-          {/* Raw Hyperlink Email - Pure White, No Underline */}
+          {/* Raw Hyperlink Email */}
           <a 
             href="mailto:feras@thefwgroup.co" 
             className="text-sm md:text-base tracking-[0.2em] lowercase text-[#FFFFFF] no-underline hover:text-[#E5E5E5] transition-colors duration-300"
