@@ -20,9 +20,9 @@ export default function Home() {
         </div>
         
         {/* Main Heading - Forced Two-Line Architecture */}
-        <h1 className="text-lg md:text-3xl font-serif font-normal tracking-[0.25em] text-[#FFFFFF] max-w-4xl leading-relaxed md:leading-loose">
-          <span className="block">BUSINESS DEVELOPMENT</span>
-          <span className="block">& TALENT MANAGEMENT</span>
+        <h1 className="text-lg md:text-3xl font-serif font-normal tracking-[0.25em] text-[#FFFFFF] max-w-4xl leading-relaxed md:leading-loose uppercase">
+          <span className="block">FINALIZING HIGH-STAKES DEALS</span>
+          <span className="block">& RECOVERING STALLED REVENUE</span>
         </h1>
       </header>
 
