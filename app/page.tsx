@@ -1,238 +1,214 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#000000] text-[#D1D5DB] font-sans antialiased selection:bg-[#FFFFFF] selection:text-[#000000] [text-rendering:optimizeLegibility]">
+    <div className="bg-white text-black antialiased selection:bg-black selection:text-white font-sans">
       
-      {/* Navigation / Header - Precision CSS Logo */}
-      <nav className="w-full px-6 pt-16 pb-8 flex justify-center md:justify-start max-w-7xl mx-auto">
-        <div className="flex items-center select-none">
-          <span className="text-5xl md:text-6xl lg:text-7xl font-serif font-black tracking-tighter text-[#FFFFFF] leading-none">
+      {/* Header Section */}
+      <header className="w-full flex flex-col items-center justify-center px-6 py-16 md:py-24 border-b border-black text-center">
+        {/* LOGO REFINEMENT: Group is bigger and baseline aligned with FW */}
+        <div className="flex items-baseline select-none mb-[20px]">
+          <span className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-black">
             FW
           </span>
-          <span className="text-xl md:text-2xl lg:text-3xl font-sans font-bold tracking-[0.1em] ml-3 text-[#FFFFFF] uppercase leading-none mt-2 md:mt-3">
+          <span className="text-2xl md:text-3xl lg:text-4xl font-sans font-bold tracking-[0.1em] ml-2 text-black uppercase">
             Group
           </span>
         </div>
-      </nav>
 
-      {/* Hero Section - Restored Spacing & 2-Line Architecture */}
-      <header className="px-6 py-20 md:py-28 w-full max-w-7xl mx-auto flex flex-col items-start text-left border-b border-[#2F2F2F]">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-normal text-[#FFFFFF] leading-[1.1] tracking-tight max-w-[1000px] mb-10 uppercase">
-          <span className="block">Strategic Deal Finalization</span>
-          <span className="block text-[#D1D5DB]">for high-ticket services.</span>
+        {/* HERO TEXT REFINEMENT: Headline breaks are specific now */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-light text-black tracking-tighter leading-none mb-10 max-w-7xl">
+          STRATEGIC DEAL <br className="hidden md:block" /> FINALIZATION <br className="hidden md:block" /> FOR HIGH-TICKET SERVICES.
         </h1>
-        <p className="text-base md:text-xl lg:text-2xl font-sans font-normal text-[#D1D5DB] tracking-wide max-w-[800px] leading-[1.6] mb-8">
-          We don't manage pipelines; we finalize transactions. We intervene at the final, psychological bottleneck of a negotiation, specializing in high-value transactions stalled by scope creep, decision hesitation, or structural commercial deadlock.
-        </p>
+        
+        <h2 className="text-2xl md:text-5xl font-black text-black tracking-tight max-w-5xl mx-auto mb-16">
+          We Own the Attention of the Male Decision Maker.
+        </h2>
+        
+        <div className="flex flex-col items-center justify-center mt-[30px]">
+          <span className="text-[12vw] md:text-[10rem] leading-none font-black text-black tracking-tighter">
+            880,000+
+          </span>
+          <span className="text-3xl md:text-5xl font-black text-black tracking-[0.2em] uppercase mt-2">
+            Followers
+          </span>
+        </div>
       </header>
 
-      {/* The Logic (The Red Zone / Manifesto) - Refined Hierarchy */}
-      <section className="px-6 py-24 md:py-32 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
-        <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-start">
-          <div className="w-full md:w-1/4">
-            <h2 className="text-2xl md:text-3xl font-sans font-bold tracking-[0.2em] uppercase text-[#D1D5DB]">
+      {/* Main Content Container */}
+      <main className="max-w-7xl mx-auto">
+        
+        {/* THE LOGIC Section - Refined Proportions and Position */}
+        <section className="flex flex-col md:flex-row items-stretch min-h-[50vh] border-b border-black">
+          <div className="w-full md:w-1/3 p-8 md:p-16 flex items-center justify-center border-b md:border-b-0 md:border-r border-black">
+            {/* LOGIC TEXT REFINEMENT: Slightly bigger and centered */}
+            <h2 className="text-3xl md:text-5xl font-serif font-light tracking-[0.2em] uppercase text-black text-center">
               The Logic
             </h2>
           </div>
-          <div className="w-full md:w-3/4">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-[#FFFFFF] leading-[1.3]">
+          <div className="w-full md:w-2/3 p-8 md:p-16 flex flex-col justify-center items-start bg-white">
+            <h3 className="text-xl md:text-3xl font-black text-black mb-10 uppercase tracking-wide leading-snug">
               Most deals die in the final stages. We provide the external pressure and structural logic required to secure the signature. When negotiations stall, we extract the friction.
             </h3>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Sector-Agnostic Expertise Grid */}
-      <section className="w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          
-          <div className="p-10 md:p-16 lg:p-20 border-b md:border-b-0 md:border-r border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-4">
-              SaaS & Tech
-            </h4>
-            <p className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Finalizing Enterprise License Agreements and M&A exits.
-            </p>
+        {/* Talent Section 1: Rula Al-Hroub - Keep Clean and Correct */}
+        <section className="flex flex-col md:flex-row items-stretch min-h-[75vh] border-b border-black">
+          <div className="w-full md:w-1/2 p-6 md:p-12 flex items-center justify-center">
+            <Image 
+              src="/images/rula_photo.jpg" 
+              alt="Rula Al-Hroub" 
+              width={600}
+              height={750}
+              priority
+              className="w-full max-w-md aspect-[4/5] object-cover shadow-2xl" 
+            />
           </div>
-
-          <div className="p-10 md:p-16 lg:p-20 border-b md:border-b-0 border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-4">
-              Esports & Gamified Platforms
-            </h4>
-            <p className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Securing corporate sponsorship and institutional revenue for digital platforms.
-            </p>
+          <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center items-start bg-white">
+            <div className="flex items-center mb-2">
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-black leading-none m-0">Rula Al-Hroub</h2>
+              <div className="flex flex-col items-center justify-center ml-[5px]">
+                <a 
+                  href="https://www.facebook.com/rulaalhroob/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="Facebook Profile"
+                >
+                  <svg className="w-10 h-10 md:w-12 md:h-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+                  </svg>
+                </a>
+                <span className="text-[10px] font-bold tracking-widest uppercase mt-1 text-gray-500 text-center">Click to Visit</span>
+              </div>
+            </div>
+            
+            <h3 className="text-xl md:text-3xl font-black text-black mb-10 uppercase tracking-wide">
+              National Media Icon
+            </h3>
+            
+            <table className="w-full text-left border-collapse">
+              <tbody>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Total Followers</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">450,000+</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Audience</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">66% Male</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Age</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">25 - 44</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Monthly Views</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">3 Million</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </section>
 
-          <div className="p-10 md:p-16 lg:p-20 border-b md:border-b-0 md:border-r md:border-t border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-4">
-              High-Ticket Professional Services
-            </h4>
-            <p className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Finalizing consultancy or creative retainers stalled by scope creep.
-            </p>
+        {/* Talent Section 2: Mira / Ephey - Keep Clean and Correct */}
+        <section className="flex flex-col md:flex-row-reverse items-stretch min-h-[75vh] border-b border-black">
+          <div className="w-full md:w-1/2 p-6 md:p-12 flex items-center justify-center">
+            <Image 
+              src="/images/mira_photo.jpg" 
+              alt="Mira / Ephey" 
+              width={600}
+              height={750}
+              className="w-full max-w-md aspect-[4/5] object-cover shadow-2xl" 
+            />
           </div>
-
-          <div className="p-10 md:p-16 lg:p-20 border-b md:border-b-0 md:border-t border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-[#FFFFFF] mb-4">
-              Business Acquisitions (SME)
-            </h4>
-            <p className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Resolving final valuation deadlocks and asset transfer terms.
-            </p>
+          <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center items-start bg-white">
+            <div className="flex items-center mb-2">
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-black leading-none m-0">Mira / Ephey</h2>
+              <div className="flex flex-col items-center justify-center ml-[5px]">
+                <a 
+                  href="https://www.instagram.com/mira.nee/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors"
+                  aria-label="Instagram Profile"
+                >
+                  <svg className="w-10 h-10 md:w-12 md:h-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
+                  </svg>
+                </a>
+                <span className="text-[10px] font-bold tracking-widest uppercase mt-1 text-gray-500 text-center">Click to Visit</span>
+              </div>
+            </div>
+            
+            <h3 className="text-xl md:text-3xl font-black text-black mb-10 uppercase tracking-wide">
+              Global Gaming Icon
+            </h3>
+            
+            <table className="w-full text-left border-collapse">
+              <tbody>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Total Followers</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">330,000+</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Audience</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">95% Male</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Age</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">25 - 34</td>
+                </tr>
+                <tr className="border-b border-gray-300">
+                  <th className="py-5 font-black text-black uppercase text-sm md:text-base tracking-widest">Live Analysis & Commentary</th>
+                  <td className="py-5 font-black text-black text-right text-xl md:text-2xl">1,500+ Hours</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </section>
 
-        </div>
-      </section>
+      </main>
 
-      {/* Operational Certainty */}
-      <section className="px-6 py-24 md:py-32 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
-        <div className="mb-16 md:mb-20 flex flex-col items-start">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-[#FFFFFF] leading-[1.2]">
-            Operational Certainty.
-          </h2>
-        </div>
-        
-        <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-16">
-          <div className="flex flex-col border-t border-[#2F2F2F] pt-6 w-full">
-            <span className="text-base md:text-lg tracking-[0.2em] uppercase text-[#FFFFFF] font-bold mb-4">
-              01. Dedicated Focus
-            </span>
-            <span className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Dedicated Focus per Engagement (No more than 3 clients accepted simultaneously).
-            </span>
-          </div>
-
-          <div className="flex flex-col border-t border-[#2F2F2F] pt-6 w-full">
-            <span className="text-base md:text-lg tracking-[0.2em] uppercase text-[#FFFFFF] font-bold mb-4">
-              02. Direct Execution
-            </span>
-            <span className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Direct, personal intervention. Every negotiation is handled in-house to ensure structural integrity and the absolute preservation of deal-logic.
-            </span>
-          </div>
-
-          <div className="flex flex-col border-t border-[#2F2F2F] pt-6 w-full">
-            <span className="text-base md:text-lg tracking-[0.2em] uppercase text-[#FFFFFF] font-bold mb-4">
-              03. Strict Anonymity
-            </span>
-            <span className="text-[#D1D5DB] leading-[1.6] text-base md:text-lg">
-              Full Non-Disclosure and Anonymity Guaranteed.
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* The Intake Gate (Live Formspree Integration) */}
-      <section className="px-6 py-24 md:py-32 w-full max-w-5xl mx-auto flex flex-col items-start text-left">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-[#FFFFFF] tracking-[0.05em] mb-6 uppercase">
-          Request Operational Support
+      {/* Partner With Us Section */}
+      <section className="py-24 px-6 bg-gray-50 border-b border-black text-center">
+        <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase text-black mb-12">
+          Partner With Us
         </h2>
-        <p className="text-base md:text-lg lg:text-xl text-[#D1D5DB] font-sans tracking-wide leading-relaxed max-w-3xl mb-16">
-          All applications are confidential. We review for complex deadlocks and critical 'Red Zone' factors.
-        </p>
-
-        {/* SECURE DATA CAPTURE */}
-        <form 
-          action="https://formspree.io/f/xgoroljy" 
-          method="POST" 
-          className="w-full flex flex-col gap-12 text-left"
-        >
-          <div className="flex flex-col md:flex-row gap-12 w-full">
-            <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="name" className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#D1D5DB] mb-3 font-bold">Name / Company</label>
-              <input 
-                type="text" 
-                id="name"
-                name="name"
-                required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-3 text-[#FFFFFF] text-xl focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
-                placeholder="Your Name or Entity"
-              />
-            </div>
-            
-            <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="email" className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#D1D5DB] mb-3 font-bold">Email Address</label>
-              <input 
-                type="email" 
-                id="email"
-                name="email"
-                required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-3 text-[#FFFFFF] text-xl focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
-                placeholder="contact@company.com"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-12 w-full">
-            <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="industry" className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#D1D5DB] mb-3 font-bold">Primary Industry</label>
-              <select 
-                id="industry"
-                name="industry"
-                required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-3 text-[#FFFFFF] text-xl focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
-              >
-                <option value="" className="bg-[#000000] text-[#D1D5DB]">Select Industry...</option>
-                <option value="SaaS / Tech" className="bg-[#000000] text-[#FFFFFF]">SaaS / Tech</option>
-                <option value="Esports / Gaming" className="bg-[#000000] text-[#FFFFFF]">Esports / Gaming</option>
-                <option value="Real Estate" className="bg-[#000000] text-[#FFFFFF]">Real Estate</option>
-                <option value="Professional Services" className="bg-[#000000] text-[#FFFFFF]">Professional Services</option>
-                <option value="Other" className="bg-[#000000] text-[#FFFFFF]">Other</option>
-              </select>
-            </div>
-            
-            <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="value" className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#D1D5DB] mb-3 font-bold">Estimated Contract Value (USD)</label>
-              <select 
-                id="value"
-                name="value"
-                required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-3 text-[#FFFFFF] text-xl focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
-              >
-                <option value="" className="bg-[#000000] text-[#D1D5DB]">Select Value...</option>
-                <option value="Under $100k" className="bg-[#000000] text-[#FFFFFF]">Under $100k</option>
-                <option value="$100k - $250k" className="bg-[#000000] text-[#FFFFFF]">$100k - $250k</option>
-                <option value="$250k - $500k" className="bg-[#000000] text-[#FFFFFF]">$250k - $500k</option>
-                <option value="$500k+" className="bg-[#000000] text-[#FFFFFF]">$500k+</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="flex flex-col w-full mb-6">
-            <label htmlFor="deadlock" className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#D1D5DB] mb-3 font-bold">Describe the Current Negotiation Gridlock</label>
-            <textarea 
-              id="deadlock"
-              name="deadlock_description"
-              rows={4}
-              required
-              className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-3 text-[#FFFFFF] text-xl focus:outline-none focus:border-[#FFFFFF] transition-colors resize-none rounded-none placeholder-[#333333]"
-              placeholder="e.g., Scope creep, decision hesitation, valuation deadlock..."
-            ></textarea>
-          </div>
-
-          <button 
-            type="submit"
-            className="w-full border-2 border-[#FFFFFF] bg-[#FFFFFF] text-[#000000] px-10 py-6 text-base md:text-lg font-bold tracking-[0.2em] uppercase hover:bg-transparent hover:text-[#FFFFFF] transition-all duration-500 cursor-pointer"
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
+          <a 
+            href="https://calendly.com/feras-thefwgroup/30min" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full md:w-1/2 text-center bg-black text-white px-8 py-8 text-xl md:text-2xl font-black tracking-widest uppercase hover:bg-gray-800 transition-colors shadow-2xl"
           >
-            Application For Representation
-          </button>
-        </form>
+            Book a Strategy Call
+          </a>
+          <a 
+            href="mailto:feras@thefwgroup.co" 
+            className="w-full md:w-1/2 text-center bg-black text-white px-8 py-8 text-xl md:text-2xl font-black tracking-widest uppercase hover:bg-gray-800 transition-colors shadow-2xl"
+          >
+            Contact via Email
+          </a>
+        </div>
       </section>
 
-      {/* Structured Memorandum Footer Section */}
-      <div className="w-full flex flex-col items-center text-center pt-8 pb-[80px]">
-        {/* Subtle Horizontal Anchor Line */}
-        <div className="w-[80px] h-[2px] bg-[#333333] mx-auto mb-[40px]"></div>
-        
-        <footer className="flex flex-col items-center justify-center font-sans">
-          <span className="text-base md:text-lg tracking-[0.2em] lowercase text-[#FFFFFF]">
-            feras@thefwgroup.co
-          </span>
-          <span className="mt-[16px] text-[#D1D5DB] font-serif font-normal tracking-[0.1em] text-sm md:text-base text-center">
-            By Appointment Only
-          </span>
-        </footer>
-      </div>
+      {/* Footer Section */}
+      <footer className="py-16 px-6 flex flex-row items-center justify-center gap-[50px] text-xs md:text-sm tracking-widest text-black font-black uppercase">
+        <a href="mailto:feras@thefwgroup.co" className="flex items-center hover:underline transition-all duration-300">
+          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          feras@thefwgroup.co
+        </a>
+        <a href="https://www.linkedin.com/in/ferasalhroub/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline transition-all duration-300">
+          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+          </svg>
+          LinkedIn
+        </a>
+      </footer>
       
     </div>
   );
