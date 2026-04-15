@@ -1,43 +1,43 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#000000] text-[#D1D5DB] font-sans antialiased selection:bg-[#FFFFFF] selection:text-[#000000] [text-rendering:optimizeLegibility]">
+    <div className="min-h-screen bg-[#000000] text-[#D1D5DB] font-sans antialiased selection:bg-[#FFFFFF] selection:text-[#000000] [text-rendering:optimizeLegibility] overflow-x-hidden">
       
       {/* Navigation / Header - Precision CSS Logo */}
       <nav className="w-full px-6 pt-20 pb-12 flex justify-center md:justify-start max-w-7xl mx-auto">
-        {/* Using inline-flex and items-center naturally tucks the 2rem GROUP into the center height of the 4rem FW */}
-        <div className="inline-flex items-center select-none">
+        {/* Math Alignment: items-start forces top alignment. FW is 4rem. GROUP is 2rem with a 2rem top margin, placing its top edge exactly at the horizontal midline of FW. */}
+        <div className="inline-flex items-start select-none">
           <span className="text-[4rem] font-serif font-black tracking-tighter text-[#FFFFFF] leading-none">
             FW
           </span>
-          <span className="text-[2rem] font-sans font-bold tracking-[0.1em] ml-3 text-[#FFFFFF] uppercase leading-none">
+          <span className="text-[2rem] font-sans font-bold tracking-[0.1em] ml-3 text-[#FFFFFF] uppercase leading-none mt-[2rem]">
             Group
           </span>
         </div>
       </nav>
 
-      {/* Hero Section - Scaled & Balanced Grid */}
+      {/* Hero Section - Strict 2-Line Architecture */}
       <header className="px-6 py-24 md:py-32 w-full max-w-7xl mx-auto flex flex-col items-start text-left border-b border-[#2F2F2F]">
-        <h1 className="text-5xl md:text-[5.5rem] font-serif font-normal text-[#FFFFFF] leading-[1.05] tracking-tight max-w-[800px] mb-12 uppercase">
-          <span className="block">Strategic Deal Finalization</span>
-          <span className="block text-[#D1D5DB]">for high-ticket services.</span>
+        <h1 className="text-[6.5vw] md:text-6xl lg:text-[5.5rem] font-serif font-normal text-[#FFFFFF] leading-[1.1] tracking-tight mb-12 uppercase w-full">
+          <span className="block whitespace-nowrap">Strategic Deal Finalization</span>
+          <span className="block text-[#D1D5DB] whitespace-nowrap">for high-ticket services.</span>
         </h1>
         <p className="text-lg md:text-2xl font-sans font-normal text-[#D1D5DB] tracking-wide max-w-[800px] leading-[1.6] mb-16">
           We don't manage pipelines; we finalize transactions. We intervene at the final, psychological bottleneck of a negotiation, specializing in high-value transactions stalled by scope creep, decision hesitation, or structural commercial deadlock.
         </p>
       </header>
 
-      {/* The Logic (The Red Zone / Manifesto) - Typographic Hierarchy Shift */}
+      {/* The Logic (The Red Zone / Manifesto) - Inverted Hierarchy */}
       <section className="px-6 py-32 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="flex flex-col md:flex-row gap-12 md:gap-24 items-start">
-          <div className="w-full md:w-1/3">
-            <h2 className="text-5xl md:text-6xl font-serif font-normal uppercase text-[#FFFFFF] leading-none">
+          <div className="w-full md:w-1/4">
+            <h2 className="text-xl md:text-2xl font-sans font-bold tracking-[0.3em] uppercase text-[#D1D5DB]">
               The Logic
             </h2>
           </div>
-          <div className="w-full md:w-2/3 mt-4 md:mt-0">
-            <p className="text-xl md:text-2xl font-sans text-[#D1D5DB] leading-[1.8] max-w-3xl">
+          <div className="w-full md:w-3/4">
+            <h3 className="text-4xl md:text-[3.5rem] lg:text-[4rem] font-serif font-normal text-[#FFFFFF] leading-[1.2]">
               Most deals die in the final stages. We provide the external pressure and structural logic required to secure the signature. When negotiations stall, we extract the friction.
-            </p>
+            </h3>
           </div>
         </div>
       </section>
@@ -123,18 +123,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Intake Gate (Heavy, Functional USD Form) */}
+      {/* The Intake Gate (Live Formspree Integration) */}
       <section className="px-6 py-32 w-full max-w-5xl mx-auto flex flex-col items-start text-left">
-        <h2 className="text-4xl md:text-6xl font-serif font-normal text-[#FFFFFF] tracking-[0.05em] mb-8 uppercase">
+        <h2 className="text-[5vw] md:text-4xl lg:text-5xl font-serif font-normal text-[#FFFFFF] tracking-[0.05em] mb-8 uppercase whitespace-nowrap">
           Request Operational Support
         </h2>
         <p className="text-lg md:text-xl text-[#D1D5DB] font-sans tracking-wide leading-relaxed max-w-3xl mb-24">
           All applications are confidential. We review for complex deadlocks and critical 'Red Zone' factors.
         </p>
 
-        {/* DATA CAPTURE FIX: Update the action URL to your Formspree/Getform endpoint */}
+        {/* SECURE DATA CAPTURE */}
         <form 
-          action="https://formspree.io/f/mqewedna" 
+          action="https://formspree.io/f/xgoroljy" 
           method="POST" 
           className="w-full flex flex-col gap-16 text-left"
         >
