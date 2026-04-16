@@ -2,14 +2,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#000000] text-[#E5E7EB] font-sans antialiased selection:bg-[#FFFFFF] selection:text-[#000000] [text-rendering:optimizeLegibility] overflow-x-hidden">
       
-      {/* Navigation / Header - Precision CSS Logo */}
+      {/* Navigation / Header - Unified Montserrat CSS Logo */}
       <nav className="w-full px-6 pt-16 pb-12 flex justify-center md:justify-start max-w-7xl mx-auto">
         <div className="inline-flex items-center select-none">
-          <span className="text-[4rem] font-serif font-black tracking-tight text-[#FFFFFF] leading-none">
-            FW
-          </span>
-          <span className="text-[2rem] font-sans font-bold tracking-tight ml-2 text-[#FFFFFF] uppercase leading-none">
-            Group
+          <span 
+            className="text-[2.5rem] md:text-[4rem] font-bold tracking-[0.4em] text-[#FFFFFF] uppercase leading-none"
+            style={{ fontFamily: "'Montserrat', sans-serif" }}
+          >
+            FW GROUP
           </span>
         </div>
       </nav>
@@ -27,7 +27,6 @@ export default function Home() {
 
       {/* The Logic - Centered Monument Hierarchy with Consistent Header Sizing */}
       <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F] flex flex-col items-center text-center">
-        {/* Scaled to match "THE WAY WE WORK" and pushed away from the text */}
         <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tight uppercase mb-20 md:mb-24 lg:mb-32">
           THE LOGIC.
         </h2>
