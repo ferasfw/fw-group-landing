@@ -25,21 +25,14 @@ export default function Home() {
         </p>
       </header>
 
-      {/* The Logic - Inverted Oversized Hierarchy */}
-      <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-          <div className="w-full lg:w-1/4">
-            {/* Scaled up from text-xl/2xl to text-3xl/4xl for structural weight */}
-            <h2 className="text-3xl md:text-4xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mt-2 md:mt-4">
-              THE LOGIC.
-            </h2>
-          </div>
-          <div className="w-full lg:w-3/4">
-            <h3 className="text-[10vw] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-bold text-[#E5E7EB] leading-[1.05] tracking-tight">
-              You did the work. We get the signature. Most deals die at the end. We step in with clear reasoning to help the customer say YES.
-            </h3>
-          </div>
-        </div>
+      {/* The Logic - Centered Monument Hierarchy */}
+      <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F] flex flex-col items-center text-center">
+        <h2 className="text-3xl md:text-5xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mb-12 lg:mb-16">
+          THE LOGIC.
+        </h2>
+        <h3 className="text-[10vw] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-bold text-[#E5E7EB] leading-[1.05] tracking-tight max-w-6xl">
+          You did the work. We get the signature. Most deals die at the end. We step in with clear reasoning to help the customer say YES.
+        </h3>
       </section>
 
       {/* What We Do - Structured Grid */}
