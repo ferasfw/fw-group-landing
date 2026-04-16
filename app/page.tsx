@@ -5,7 +5,7 @@ export default function Home() {
       {/* Navigation / Header - Precision CSS Logo */}
       <nav className="w-full px-6 pt-16 pb-12 flex justify-center md:justify-start max-w-7xl mx-auto">
         <div className="inline-flex items-center select-none">
-          <span className="text-[4rem] font-serif font-black tracking-tighter text-[#FFFFFF] leading-none">
+          <span className="text-[4rem] font-serif font-black tracking-tight text-[#FFFFFF] leading-none">
             FW
           </span>
           <span className="text-[2rem] font-sans font-bold tracking-tight ml-2 text-[#FFFFFF] uppercase leading-none">
@@ -14,19 +14,19 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Brutal 5th Grade Simplicity */}
+      {/* Hero Section - Brutal 5th Grade Simplicity & High Legibility */}
       <header className="px-6 py-24 md:py-32 w-full max-w-7xl mx-auto flex flex-col items-start text-left border-b border-[#2F2F2F]">
-        <h1 className="text-[12vw] md:text-[6rem] lg:text-[7rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tighter mb-10 uppercase w-full">
+        <h1 className="text-[12vw] md:text-[6rem] lg:text-[7rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tight mb-10 uppercase w-full">
           <span className="block">WE FINISH DEALS.</span>
           <span className="block">WE GET YOU PAID.</span>
         </h1>
-        <p className="text-[20px] md:text-[22px] font-sans font-normal text-[#E5E7EB] tracking-normal max-w-[800px] leading-[1.6]">
+        <p className="text-[20px] md:text-[22px] font-sans font-normal text-[#E5E7EB] tracking-wide max-w-[800px] leading-[1.7]">
           Most sales stop at the last second. The customer gets nervous. We help small companies finish big contracts and get the signature.
         </p>
       </header>
 
-      {/* The Logic - Inverted Oversized Hierarchy (Largest text on the page) */}
-      <section className="px-6 py-32 md:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
+      {/* The Logic - Inverted Oversized Hierarchy */}
+      <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           <div className="w-full lg:w-1/4">
             <h2 className="text-xl md:text-2xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mt-2">
@@ -34,7 +34,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="w-full lg:w-3/4">
-            <h3 className="text-[10vw] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-bold text-[#E5E7EB] leading-[0.95] tracking-tighter">
+            <h3 className="text-[10vw] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-bold text-[#E5E7EB] leading-[1.05] tracking-tight">
               You did the work. We get the signature. Most deals die at the end. We step in with clear reasoning to help the customer say YES.
             </h3>
           </div>
@@ -45,29 +45,29 @@ export default function Home() {
       <section className="w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="grid grid-cols-1 lg:grid-cols-3">
           
-          <div className="p-12 md:p-16 border-b lg:border-b-0 lg:border-r border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tighter uppercase text-[#FFFFFF] mb-6 leading-tight">
+          <div className="p-12 md:p-16 lg:p-20 border-b lg:border-b-0 lg:border-r border-[#2F2F2F] flex flex-col justify-start">
+            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tight uppercase text-[#FFFFFF] mb-8 leading-tight">
               DESIGN & SERVICE AGENCIES.
             </h4>
-            <p className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
-              We help people like Interior Designers get their big proposals signed. If a customer is scared of your price, we close the deal.
+            <p className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
+              We help people who run creative companies. Whether you do design, marketing, or events, we help get your big proposals signed. If a customer is scared of your price, we close the deal.
             </p>
           </div>
 
-          <div className="p-12 md:p-16 border-b lg:border-b-0 lg:border-r border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tighter uppercase text-[#FFFFFF] mb-6 leading-tight">
+          <div className="p-12 md:p-16 lg:p-20 border-b lg:border-b-0 lg:border-r border-[#2F2F2F] flex flex-col justify-start">
+            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tight uppercase text-[#FFFFFF] mb-8 leading-tight">
               TECH COMPANIES.
             </h4>
-            <p className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
+            <p className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
               We help software builders get companies to pay for their apps. You built the tool. We finalize the sales contracts.
             </p>
           </div>
 
-          <div className="p-12 md:p-16 border-[#2F2F2F] flex flex-col justify-start">
-            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tighter uppercase text-[#FFFFFF] mb-6 leading-tight">
+          <div className="p-12 md:p-16 lg:p-20 border-[#2F2F2F] flex flex-col justify-start">
+            <h4 className="text-2xl md:text-3xl font-serif font-bold tracking-tight uppercase text-[#FFFFFF] mb-8 leading-tight">
               COLLECTING MONEY.
             </h4>
-            <p className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
+            <p className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
               If a company owes you money and is not paying, we get it back. We negotiate firmly so you don't have to.
             </p>
           </div>
@@ -75,38 +75,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Promise - Operational Discretion */}
-      <section className="px-6 py-32 md:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
+      {/* Our Promise - The Way We Work (Jargon Fix) */}
+      <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="mb-20 flex flex-col items-start">
-          <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tighter uppercase">
-            Operational Discretion.
+          <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tight uppercase">
+            THE WAY WE WORK.
           </h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
           <div className="flex flex-col border-t-2 border-[#2F2F2F] pt-8 w-full">
-            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-4">
+            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-6">
               01. DEDICATED FOCUS.
             </span>
-            <span className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
+            <span className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
               We only help 3 companies at a time.
             </span>
           </div>
 
           <div className="flex flex-col border-t-2 border-[#2F2F2F] pt-8 w-full">
-            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-4">
+            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-6">
               02. DIRECT EXECUTION.
             </span>
-            <span className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
+            <span className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
               We do the work ourselves. We do not hire beginners.
             </span>
           </div>
 
           <div className="flex flex-col border-t-2 border-[#2F2F2F] pt-8 w-full">
-            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-4">
+            <span className="text-xl md:text-2xl tracking-widest uppercase text-[#FFFFFF] font-bold mb-6">
               03. STRICT ANONYMITY.
             </span>
-            <span className="text-[#E5E7EB] leading-[1.6] text-[20px] md:text-[22px]">
+            <span className="text-[#E5E7EB] leading-[1.7] tracking-wide text-[20px] md:text-[22px]">
               Your deal is private.
             </span>
           </div>
@@ -114,11 +114,11 @@ export default function Home() {
       </section>
 
       {/* The Intake Gate - Ask For Help */}
-      <section className="px-6 py-32 md:py-48 w-full max-w-5xl mx-auto flex flex-col items-start text-left">
-        <h2 className="text-[12vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] tracking-tighter mb-8 uppercase leading-none">
+      <section className="px-6 py-32 lg:py-48 w-full max-w-5xl mx-auto flex flex-col items-start text-left">
+        <h2 className="text-[12vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] tracking-tight mb-8 uppercase leading-none">
           ASK FOR HELP.
         </h2>
-        <p className="text-[20px] md:text-[22px] text-[#E5E7EB] font-sans tracking-wide leading-relaxed max-w-3xl mb-20">
+        <p className="text-[20px] md:text-[22px] text-[#E5E7EB] font-sans tracking-wide leading-[1.7] max-w-3xl mb-24">
           Describe your problem (e.g., they won't sign, scary price, they won't pay).
         </p>
 
@@ -130,25 +130,25 @@ export default function Home() {
         >
           <div className="flex flex-col md:flex-row gap-16 w-full">
             <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="name" className="text-base tracking-widest uppercase text-[#FFFFFF] mb-4 font-bold">Name / Company</label>
+              <label htmlFor="name" className="text-lg tracking-widest uppercase text-[#FFFFFF] mb-6 font-bold">Name / Company</label>
               <input 
                 type="text" 
                 id="name"
                 name="name"
                 required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-4 text-[#E5E7EB] text-[20px] md:text-[22px] focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
+                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-5 text-[#E5E7EB] text-[22px] tracking-wide focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
                 placeholder="Your Name or Company"
               />
             </div>
             
             <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="email" className="text-base tracking-widest uppercase text-[#FFFFFF] mb-4 font-bold">Email Address</label>
+              <label htmlFor="email" className="text-lg tracking-widest uppercase text-[#FFFFFF] mb-6 font-bold">Email Address</label>
               <input 
                 type="email" 
                 id="email"
                 name="email"
                 required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-4 text-[#E5E7EB] text-[20px] md:text-[22px] focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
+                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-5 text-[#E5E7EB] text-[22px] tracking-wide focus:outline-none focus:border-[#FFFFFF] transition-colors rounded-none placeholder-[#333333]"
                 placeholder="contact@company.com"
               />
             </div>
@@ -156,12 +156,12 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row gap-16 w-full">
             <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="industry" className="text-base tracking-widest uppercase text-[#FFFFFF] mb-4 font-bold">What industry are you in?</label>
+              <label htmlFor="industry" className="text-lg tracking-widest uppercase text-[#FFFFFF] mb-6 font-bold">What industry are you in?</label>
               <select 
                 id="industry"
                 name="industry"
                 required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-4 text-[#E5E7EB] text-[20px] md:text-[22px] focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
+                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-5 text-[#E5E7EB] text-[22px] tracking-wide focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
               >
                 <option value="" className="bg-[#000000] text-[#E5E7EB]">Select Industry...</option>
                 <option value="SaaS" className="bg-[#000000] text-[#E5E7EB]">SaaS</option>
@@ -172,12 +172,12 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col w-full md:w-1/2">
-              <label htmlFor="value" className="text-base tracking-widest uppercase text-[#FFFFFF] mb-4 font-bold">How big is the contract? (USD)</label>
+              <label htmlFor="value" className="text-lg tracking-widest uppercase text-[#FFFFFF] mb-6 font-bold">How big is the contract? (USD)</label>
               <select 
                 id="value"
                 name="value"
                 required
-                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-4 text-[#E5E7EB] text-[20px] md:text-[22px] focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
+                className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-5 text-[#E5E7EB] text-[22px] tracking-wide focus:outline-none focus:border-[#FFFFFF] transition-colors appearance-none rounded-none cursor-pointer"
               >
                 <option value="" className="bg-[#000000] text-[#E5E7EB]">Select Size...</option>
                 <option value="Under $10k" className="bg-[#000000] text-[#E5E7EB]">Under $10k</option>
@@ -188,14 +188,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full mb-8">
-            <label htmlFor="deadlock" className="text-base tracking-widest uppercase text-[#FFFFFF] mb-4 font-bold">What is the problem?</label>
+          <div className="flex flex-col w-full mb-10">
+            <label htmlFor="deadlock" className="text-lg tracking-widest uppercase text-[#FFFFFF] mb-6 font-bold">What is the problem?</label>
             <textarea 
               id="deadlock"
               name="deadlock_description"
               rows={4}
               required
-              className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-4 text-[#E5E7EB] text-[20px] md:text-[22px] focus:outline-none focus:border-[#FFFFFF] transition-colors resize-none rounded-none placeholder-[#333333]"
+              className="w-full bg-transparent border-b-2 border-[#2F2F2F] py-5 text-[#E5E7EB] text-[22px] tracking-wide focus:outline-none focus:border-[#FFFFFF] transition-colors resize-none rounded-none placeholder-[#333333]"
               placeholder="e.g., They won't sign, scary price, they won't pay..."
             ></textarea>
           </div>
