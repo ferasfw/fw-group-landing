@@ -25,12 +25,13 @@ export default function Home() {
         </p>
       </header>
 
-      {/* The Logic - Centered Monument Hierarchy */}
+      {/* The Logic - Centered Monument Hierarchy with Consistent Header Sizing */}
       <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F] flex flex-col items-center text-center">
-        <h2 className="text-3xl md:text-5xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mb-12 lg:mb-16">
+        {/* Scaled to match "THE WAY WE WORK" and pushed away from the text */}
+        <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tight uppercase mb-20 md:mb-24 lg:mb-32">
           THE LOGIC.
         </h2>
-        <h3 className="text-[10vw] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-bold text-[#E5E7EB] leading-[1.05] tracking-tight max-w-6xl">
+        <h3 className="text-[8vw] md:text-[4.5rem] lg:text-[5rem] font-serif font-bold text-[#E5E7EB] leading-[1.05] tracking-tight max-w-6xl">
           You did the work. We get the signature. Most deals die at the end. We step in with clear reasoning to help the customer say YES.
         </h3>
       </section>
@@ -69,7 +70,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Promise - The Way We Work (Jargon Fix) */}
+      {/* Our Promise - The Way We Work */}
       <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="mb-20 flex flex-col items-start">
           <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] font-serif font-bold text-[#FFFFFF] leading-[0.9] tracking-tight uppercase">
