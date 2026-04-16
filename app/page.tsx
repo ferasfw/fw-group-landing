@@ -29,7 +29,8 @@ export default function Home() {
       <section className="px-6 py-32 lg:py-48 w-full max-w-7xl mx-auto border-b border-[#2F2F2F]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           <div className="w-full lg:w-1/4">
-            <h2 className="text-xl md:text-2xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mt-2">
+            {/* Scaled up from text-xl/2xl to text-3xl/4xl for structural weight */}
+            <h2 className="text-3xl md:text-4xl font-sans font-bold tracking-widest uppercase text-[#FFFFFF] leading-none mt-2 md:mt-4">
               THE LOGIC.
             </h2>
           </div>
