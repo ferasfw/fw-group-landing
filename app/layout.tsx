@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "FW Group",
   description:
-    "Strategic representation for social leaders and digital creators. We manage brand partnerships end to end.",
+    "FW GROUP specializes in commercial intervention and revenue recovery to unstick stalled projects and accelerate business results.",
 };
 
 export default function RootLayout({
